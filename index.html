@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certification Alignment | Enterprise Training Matrix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+        }
+
+        th {
+            padding: 18px 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 3px solid #1e40af;
+        }
+
+        td {
+            padding: 16px 15px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        tbody tr {
+            transition: all 0.3s ease;
+        }
+
+        tbody tr:hover {
+            background-color: #f0f9ff;
+            transform: scale(1.01);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        tbody tr:nth-child(even):hover {
+            background-color: #f0f9ff;
+        }
+
+        .department {
+            font-weight: 600;
+            color: #1e40af;
+            font-size: 1.05em;
+        }
+
+        .cert-vendor {
+            color: #059669;
+            font-weight: 500;
+        }
+
+        .cert-name {
+            font-weight: 600;
+            color: #4f46e5;
+        }
+
+        .cost {
+            color: #dc2626;
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+
+        .justification {
+            color: #4b5563;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .task {
+            color: #374151;
+        }
+
+        footer {
+            background: #f3f4f6;
+            padding: 20px 30px;
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.9em;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .badge-priority {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .badge-recommended {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .badge-optional {
+            background: #e0e7ff;
+            color: #4338ca;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+
+            th, td {
+                padding: 12px 10px;
+                font-size: 0.9em;
+            }
+
+            th {
+                font-size: 0.85em;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 30px 20px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .content {
+                padding: 15px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Certification Alignment Matrix</h1>
+            <p>Enterprise Training & Professional Development Requirements</p>
+        </header>
+
+        <div class="content">
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Task / Skill Requirement</th>
+                            <th>Certification Vendor</th>
+                            <th>Certification Name</th>
+                            <th>Cost</th>
+                            <th>Justification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="department">Software Development Innovation</td>
+                            <td class="task">
+                                <strong>TASK</strong><br>
+                                Pass the Written (Core) Exam - 90-minute, 90 questions<br>
+                                Prepare for the Performance-Based Exam - Involves simulation scenarios<br>
+                                Pass the Performance-Based Exam - 90-minute hands-on assessment<br>
+                                Recertification - Security+ holders must recertify every 3 years<br><br>
+                                <strong>SKILLS</strong><br>
+                                Threat and Vulnerability Management - Identify and mitigate security risks<br>
+                                Security Architecture - Implement secure network designs and solutions<br>
+                                Cryptography and PKI - Understanding encryption methods and key management<br>
+                                Identity and Access Management - Control user access and authentication<br>
+                                Security Operations - Monitor, detect, and respond to security incidents
+                            </td>
+                            <td class="cert-vendor">CompTIA</td>
+                            <td class="cert-name">CompTIA Security+<br><span class="badge badge-priority">Priority</span></td>
+                            <td class="cost">$404</td>
+                            <td class="justification">Industry-recognized baseline for security knowledge; validates ability to implement secure development practices and understand common vulnerabilities</td>
+                        </tr>
+                        <tr>
+                            <td class="department">Software Development Innovation</td>
+                            <td class="task">
+                                <strong>TASK</strong><br>
+                                Pass the DVA-C02 Exam - 130 minutes, 65 questions<br>
+                                Develop and deploy cloud applications on AWS<br>
+                                Implement CI/CD pipelines for application deployment<br>
+                                Recertification - Must recertify every 3 years<br><br>
+                                <strong>SKILLS</strong><br>
+                                AWS Core Services - Lambda, API Gateway, DynamoDB, S3, CloudFormation<br>
+                                Application Development - Serverless architectures and microservices<br>
+                                Debugging and Optimization - CloudWatch, X-Ray for monitoring and troubleshooting<br>
+                                Security Implementation - IAM policies, encryption, and secure coding practices<br>
+                                DevOps Integration - CodeCommit, CodeBuild, CodeDeploy, CodePipeline
+                            </td>
+                            <td class="cert-vendor">Amazon Web Services</td>
+                            <td class="cert-name">AWS Certified Developer - Associate<br><span class="badge badge-recommended">Recommended</span></td>
+                            <td class="cost">$150</td>
+                            <td class="justification">Validates proficiency in developing and maintaining AWS-based applications; essential for building scalable cloud-native solutions</td>
+                        </tr>
+                        <tr>
+                            <td class="department">Software Development Innovation</td>
+                            <td class="task">
+                                <strong>TASK</strong><br>
+                                Pass the Professional Cloud Developer Exam - 120 minutes<br>
+                                Design and build scalable applications on Google Cloud<br>
+                                Implement modern development practices and tools<br>
+                                Recertification - Must recertify every 2 years<br><br>
+                                <strong>SKILLS</strong><br>
+                                Google Cloud Services - Cloud Run, App Engine, Cloud Functions, GKE<br>
+                                Application Modernization - Containers, microservices, and cloud-native patterns<br>
+                                Data Management - Cloud SQL, Firestore, BigQuery integration<br>
+                                Observability - Cloud Monitoring, Logging, Trace, and Error Reporting<br>
+                                Security Best Practices - IAM, Secret Manager, and secure application design
+                            </td>
+                            <td class="cert-vendor">Google Cloud</td>
+                            <td class="cert-name">Professional Cloud Developer<br><span class="badge badge-recommended">Recommended</span></td>
+                            <td class="cost">$200</td>
+                            <td class="justification">Demonstrates expertise in designing, building, and deploying scalable applications using GCP services and best practices</td>
+                        </tr>
+                        <tr>
+                            <td class="department">IT</td>
+                            <td class="task">
+                                <strong>TASK</strong><br>
+                                Pass Core 1 Exam (220-1101) - 90 minutes, 90 questions<br>
+                                Pass Core 2 Exam (220-1102) - 90 minutes, 90 questions<br>
+                                Demonstrate hardware and software troubleshooting skills<br>
+                                Recertification - A+ holders must recertify every 3 years<br><br>
+                                <strong>SKILLS</strong><br>
+                                Hardware Troubleshooting - PC components, mobile devices, and peripherals<br>
+                                Operating Systems - Windows, macOS, Linux installation and configuration<br>
+                                Networking Fundamentals - TCP/IP, wireless, and basic network troubleshooting<br>
+                                Security Basics - Malware removal, authentication, and data protection<br>
+                                Operational Procedures - Safety, communication, and professionalism
+                            </td>
+                            <td class="cert-vendor">CompTIA</td>
+                            <td class="cert-name">CompTIA A+<br><span class="badge badge-priority">Priority</span></td>
+                            <td class="cost">$246</td>
+                            <td class="justification">Foundation certification for IT support roles; validates core technical skills for hardware, software, and troubleshooting</td>
+                        </tr>
+                        <tr>
+                            <td class="department">IT</td>
+                            <td class="task">
+                                <strong>TASK</strong><br>
+                                Pass the ITIL 4 Foundation Exam - 60 minutes, 40 questions<br>
+                                Understand IT service management best practices<br>
+                                Apply ITIL principles to real-world scenarios<br>
+                                No recertification required for Foundation level<br><br>
+                                <strong>SKILLS</strong><br>
+                                Service Value System - Understanding how components create value<br>
+                                Four Dimensions of Service Management - Organizations, information, partners, value streams<br>
+                                ITIL Practices - Incident management, change control, service desk operations<br>
+                                Continual Improvement - Value stream mapping and optimization<br>
+                                Guiding Principles - Focus on value, collaboration, and iterative progress
+                            </td>
+                            <td class="cert-vendor">AXELOS</td>
+                            <td class="cert-name">ITIL 4 Foundation<br><span class="badge badge-recommended">Recommended</span></td>
+                            <td class="cost">$410</td>
+                            <td class="justification">Establishes best practices for IT service delivery; aligns IT operations with business objectives and improves service quality</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <p>Last Updated: February 2026 | For internal use only | Contact HR for certification reimbursement details</p>
+        </footer>
+    </div>
+</body>
+</html>
